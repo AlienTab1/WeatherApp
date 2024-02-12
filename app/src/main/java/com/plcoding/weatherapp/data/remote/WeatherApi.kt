@@ -1,6 +1,6 @@
 package com.plcoding.weatherapp.data.remote
 
-import retrofit2.http.Query
+import retrofit2.http.*
 
 interface WeatherApi {
 
