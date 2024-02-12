@@ -8,11 +8,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Text
 import androidx.compose.ui.Alignment
@@ -30,6 +26,7 @@ class MainActivity : ComponentActivity() {
 
     private val viewModel: WeatherViewModel by viewModels()
     private lateinit var permissionLauncher: ActivityResultLauncher<Array<String>>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         permissionLauncher = registerForActivityResult(
@@ -72,7 +69,6 @@ class MainActivity : ComponentActivity() {
                         )
                     }
                 }
-                
             }
         }
     }

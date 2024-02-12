@@ -8,12 +8,12 @@ import com.plcoding.weatherapp.domain.weather.WeatherType
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-
 private data class IndexedWeatherData(
     val index: Int,
     val data: WeatherData
 )
-fun WeatherDataDto.toWeatherDataMap(): Map<Int, List<WeatherData>>{
+
+fun WeatherDataDto.toWeatherDataMap(): Map<Int, List<WeatherData>> {
     return time.mapIndexed { index, time ->
         val temperature = temperatures[index]
         val weatherCode = weatherCodes[index]
