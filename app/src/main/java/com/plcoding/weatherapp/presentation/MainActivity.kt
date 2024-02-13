@@ -50,18 +50,6 @@ fun weatherApp(){
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
     ) {
-        Image(
-            painter = painterResource(R.mipmap.ic_icon),
-            contentDescription = null,
-            modifier = Modifier.width(200.dp)
-        )
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(DarkBlue)
-                //.clickable { navigateToProfile(meteoriteLandingInfo) }
-        ){
 
-        }
     }
 }
