@@ -1,6 +1,8 @@
 package com.plcoding.weatherapp.presentation
 
+import android.content.Intent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
@@ -10,12 +12,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.content.ContextCompat.startActivity
 import com.plcoding.weatherapp.R
+import java.io.Console
 import java.time.format.DateTimeFormatter
 import kotlin.math.roundToInt
 
@@ -25,11 +30,15 @@ fun WeatherCard(
     backgroundColor: Color,
     modifier: Modifier = Modifier
 ) {
+    val context = LocalContext.current
     state.weatherInfo?.currentWeatherData?.let { data ->
         Card(
             backgroundColor = backgroundColor,
             shape = RoundedCornerShape(10.dp),
             modifier = modifier.padding(16.dp)
+                .clickable {
+                    context.startActivity(Intent(context, LocalWeatherDetailActivity::class.java))
+                }
         ) {
             Column(
                 modifier = Modifier

@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.WeatherApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.WeatherApp.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.WeatherApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.WeatherApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.WeatherApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.WeatherApp.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/WeatherApp.iml" filepath="$PROJECT_DIR$/.idea/modules/WeatherApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WeatherApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WeatherApp.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WeatherApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WeatherApp.app.unitTest.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.plcoding.weatherapp.presentation
 
+import android.os.Parcelable
 import com.plcoding.weatherapp.domain.weather.WeatherInfo
 
 data class WeatherState(
